@@ -1,3 +1,4 @@
+import sys
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 print(myCat['size'])
 
@@ -25,3 +26,5 @@ print('I am bringing ' + str(myCat.get('asdf', 0)) + ' cats to the picnic')
 myCat.setdefault('color', 'black')
 
 print(myCat)
+
+print(sys.argv)
