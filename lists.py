@@ -1,3 +1,5 @@
+import copy
+
 spam = ['cat', 'bat', 'rat', 'elephant']
 print(spam)
 
@@ -28,3 +30,14 @@ print(spam * 2)
 print(list('hello'))
 
 print('howdy' in spam)
+
+
+def eggs(someParameter):
+    someParameter.append('Hello')
+
+spam = [1, 2, 3]
+eggs(spam)
+print(spam)
+
+asdf = copy.deepcopy(spam)
+print(asdf)
